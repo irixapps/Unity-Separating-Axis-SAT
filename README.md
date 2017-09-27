@@ -3,7 +3,7 @@
 This is a simple implementation of the Separating Axis Theorem (SAT) in Unity.
 SAT is an approach to collision detection, based on the principle that if you are able to draw a line between 2 polygons they are not colliding.
 
-![]({{site.baseurl}}//separatingAxisTest.gif)
+![SAT](https://s3.amazonaws.com/irix-github/separatingAxisTest.gif)
 
 **Explaination** 
 
