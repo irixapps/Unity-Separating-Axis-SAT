@@ -17,7 +17,7 @@ _However, this didn't pick up all the collisions correctly._
 
 The correct axes were worked out based on this [https://gamedev.stackexchange.com/questions/44500/how-many-and-which-axes-to-use-for-3d-obb-collision-with-sat/](https://gamedev.stackexchange.com/questions/44500/how-many-and-which-axes-to-use-for-3d-obb-collision-with-sat/)
 
-**In 3D for 3 cubes, the following 15 axes are needed**
+**In 3D for 2 cubes, the following 15 axes are needed**
 
 * 3 axes from object A (face normals)
 * 3 axes from object B (face normals)
@@ -33,6 +33,8 @@ The 9 axes are made up of cross products of edges of A and edges of B
 * etc
 
 Some optimisations to early out were added if a separating axis is found early in the calculations.
+
+To extend to more complex shapes, the number of axes to check needs to increase as well.
 
 **Useage** 
 
