@@ -11,24 +11,21 @@ SAT is an approach to collision detection, based on the principle that if you ar
 
 **References** 
 
-Initially I started with this tutorial and Unity code
+Initially I started with this tutorial and Unity code:
 
 [http://thegoldenmule.com/blog/2013/12/supercolliders-in-unity/](http://thegoldenmule.com/blog/2013/12/supercolliders-in-unity/)
 
 However, this didn't pick up all the collisions correctly.
 
-The correct axes were worked out based on this post
+The correct axes were worked out based on this post:
 
 [https://gamedev.stackexchange.com/questions/44500/how-many-and-which-axes-to-use-for-3d-obb-collision-with-sat/](https://gamedev.stackexchange.com/questions/44500/how-many-and-which-axes-to-use-for-3d-obb-collision-with-sat/)
 
 
-And some optimisations to early out were added if a separating axis is found early in the piece/
+And some optimisations to early out were added if a separating axis is found early in the calculations.
 
 **Useage** 
 
-This is a simple Unity project, run in the editor and drag the cubes around. When they intersect from movement, rotation or scaling they will turn red.
+This is a simple Unity project. Run in the editor and drag the cubes around. When they intersect from movement, rotation or scaling they will turn red.
 
-There is some basic penetration calculation code in there, but it in unreliable. SAT is best used for detection only.
-
-
-
+There is some basic penetration calculation code in there, but it is unreliable. SAT is best used for detection only.
